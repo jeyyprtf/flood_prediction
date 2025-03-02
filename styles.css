@@ -1,0 +1,54 @@
+/* Gaya dasar */
+body {
+  font-family: SF Pro, sans-serif;
+  margin: 20px;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+/* Judul */
+h1 {
+  text-align: center;
+}
+
+/* Membuat wrapper tabel bisa di-scroll horizontal saat layar sempit */
+.table-responsive {
+  width: 90%;
+  margin: 0 auto; /* center */
+  overflow-x: auto; /* scroll bar horizontal jika melebihi lebar layar */
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Tabel */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  min-width: 600px; /* Supaya kalau layar < 600px, bisa di-scroll */
+}
+
+/* Header tabel */
+thead {
+  background-color: #ddd;
+}
+
+/* Sel header & sel body */
+th, td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: left;
+}
+
+/* Selang-seling warna baris */
+tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+/* (Opsional) Media query untuk menyesuaikan font size atau padding di layar kecil */
+@media (max-width: 600px) {
+  th, td {
+    font-size: 14px;
+    padding: 6px;
+  }
+}
